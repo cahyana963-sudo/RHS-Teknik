@@ -1,18 +1,228 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18255577085"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18255577085');
+  </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RHS Teknik - Jasa Servis Pompa Air & Sumur Bor</title>
+    <title>RHS Teknik - Spesialis Pompa Air & Sumur Bor Tangerang Selatan & Jakarta Selatan</title>
+    <meta name="description" content="Jasa servis pompa air, pembuatan sumur bor, & instalasi air panggilan bergaransi untuk Tangerang Selatan & Jakarta Selatan. Hubungi 0877-6510-3868.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gallery-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+    </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-sky-500 selection:text-white">
 
-    <!-- Langkah Pengerjaan Section -->
-    <section class="py-16 bg-slate-900">
-        <div class="max-w-4xl mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <!-- Top Announcement Bar -->
+    <div class="bg-sky-600 text-white text-xs sm:text-sm font-medium py-2 px-4 text-center">
+        <span class="inline-flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+            Layanan Siap Panggilan 24 Jam • Tangerang Selatan &amp; Jakarta Selatan • Bergaransi
+        </span>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md text-white shadow-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+            
+            <!-- LOGO RHS TEKNIK -->
+            <div class="flex items-center space-x-3">
+                <img src="https://i.imgur.com/JCM4vUe.jpg" alt="Logo RHS Teknik" class="h-11 w-auto rounded-lg shadow border border-slate-700">
+                <div>
+                    <span class="font-bold text-lg tracking-wide text-white block leading-tight">RHS TEKNIK</span>
+                    <span class="text-[10px] text-sky-400 font-medium block">Pompa Air &amp; Sumur Bor</span>
+                </div>
+            </div>
+
+            <!-- Tombol Kontak Header -->
+            <div class="flex items-center gap-3">
+                <a href="tel:087765103868" class="hidden md:flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition">
+                    <i class="fas fa-phone-alt text-sky-400"></i>
+                    <span>0877-6510-3868</span>
+                </a>
+                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm flex items-center space-x-2 transition shadow-lg hover:shadow-green-500/20">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span class="hidden sm:inline">Hubungi WA</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-slate-950 via-slate-900 to-sky-950 text-white py-16 px-4 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center space-y-6 relative z-10">
+            
+            <!-- Display Foto / Logo Utama -->
+            <div class="flex justify-center mb-4">
+                <img src="https://i.imgur.com/JCM4vUe.jpg" alt="RHS Teknik Utama" class="h-44 sm:h-56 w-auto rounded-3xl shadow-2xl border-2 border-sky-500/30 object-cover">
+            </div>
+
+            <div class="inline-flex items-center gap-2 bg-sky-500/10 border border-sky-500/30 text-sky-300 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">
+                <i class="fas fa-check-circle text-sky-400"></i>
+                Teknisi Handal &amp; Bergaransi
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight tracking-tight">
+                Solusi Cepat Air Mati &amp; Pompa Rusak <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">Tangerang Selatan &amp; Jaksel</span>
+            </h1>
+
+            <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto font-normal">
+                Jasa pengeboran sumur bor baru, perbaikan mesin pompa, gulung dinamo, hingga instalasi otomatis APC. Pengerjaan rapi, cepat, dan transparan.
+            </p>
+
+            <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto sm:max-w-none">
+                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20mau%20konsultasi%20kendala%20pompa%20air" target="_blank" class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-center shadow-xl shadow-green-900/30 transition flex items-center justify-center space-x-3 text-lg">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span>Konsultasi WA Gratis</span>
+                </a>
+                <a href="tel:087765103868" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl text-center border border-slate-700 shadow-lg transition flex items-center justify-center space-x-3 text-lg">
+                    <i class="fas fa-phone-alt text-sky-400"></i>
+                    <span>Panggil Teknisi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats / Angka Kepercayaan -->
+    <section class="bg-white py-8 border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <p class="text-3xl sm:text-4xl font-extrabold text-sky-600">1000+</p>
+                <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Pelanggan Puas</p>
+            </div>
+            <div class="p-4">
+                <p class="text-3xl sm:text-4xl font-extrabold text-sky-600">10+ Thn</p>
+                <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Pengalaman Teknisi</p>
+            </div>
+            <div class="p-4">
+                <p class="text-3xl sm:text-4xl font-extrabold text-sky-600">24 Jam</p>
+                <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Respon Cepat</p>
+            </div>
+            <div class="p-4">
+                <p class="text-3xl sm:text-4xl font-extrabold text-sky-600">100%</p>
+                <p class="text-xs sm:text-sm text-slate-600 font-medium mt-1">Garansi Pekerjaan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri Foto Pekerjaan Lapangan -->
+    <section class="py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center space-y-2 mb-12">
+                <span class="text-sky-600 font-bold text-xs uppercase tracking-widest">Portofolio Pekerjaan</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">Dokumentasi Lapangan Kami</h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-sm">Bukti pengerjaan nyata teknisi RHS Teknik langsung di rumah dan lokasi pelanggan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- FOTO 1 -->
+                <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <img src="https://i.imgur.com/oTFQ3Ha.jpg" alt="Pembuatan Sumur Bor" class="gallery-img">
+                    <div class="mt-3 px-2 pb-1">
+                        <h4 class="font-bold text-slate-800 text-base">Pembuatan Sumur Bor</h4>
+                        <p class="text-xs text-slate-600">Sumur bor jet pump &amp; submersible air bersih.</p>
+                    </div>
+                </div>
+
+                <!-- FOTO 2 -->
+                <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <img src="https://i.imgur.com/TvRIWdk.jpg" alt="Pemasangan APC Otomatis" class="gallery-img">
+                    <div class="mt-3 px-2 pb-1">
+                        <h4 class="font-bold text-slate-800 text-base">Pemasangan APC Otomatis</h4>
+                        <p class="text-xs text-slate-600">Instalasi Automatic Pressure Control presisi.</p>
+                    </div>
+                </div>
+
+                <!-- FOTO 3 -->
+                <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <img src="https://i.imgur.com/SAj4uJk.jpg" alt="Servis & Perbaikan Pompa Air" class="gallery-img">
+                    <div class="mt-3 px-2 pb-1">
+                        <h4 class="font-bold text-slate-800 text-base">Servis &amp; Perbaikan Pompa</h4>
+                        <p class="text-xs text-slate-600">Penanganan mesin mati total, bising, &amp; bocor.</p>
+                    </div>
+                </div>
+
+                <!-- FOTO 4 -->
+                <div class="bg-white p-3 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition">
+                    <img src="https://i.imgur.com/16RVtrx.jpg" alt="Servis Dinamo Pompa Air" class="gallery-img">
+                    <div class="mt-3 px-2 pb-1">
+                        <h4 class="font-bold text-slate-800 text-base">Servis &amp; Gulung Dinamo</h4>
+                        <p class="text-xs text-slate-600">Bongkar mesin, perbaikan dinamo, &amp; ganti bearing.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan RHS Teknik -->
+    <section class="py-16 bg-white border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center space-y-2 mb-12">
+                <span class="text-sky-600 font-bold text-xs uppercase tracking-widest">Alasan Memilih Kami</span>
+                <h2 class="text-3xl font-extrabold text-slate-900">Mengapa Memakai RHS Teknik?</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center space-y-3">
+                    <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto text-2xl font-bold">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-800">Bergaransi Resmi</h3>
+                    <p class="text-slate-600 text-sm">Setiap pengerjaan servis maupun pembuatan sumur bor dilengkapi dengan garansi agar Anda merasa tenang.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center space-y-3">
+                    <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto text-2xl font-bold">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-800">Datang Cepat ke Lokasi</h3>
+                    <p class="text-slate-600 text-sm">Tim teknisi kami siap langsung datang ke rumah Anda di seluruh area Tangerang Selatan dan Jakarta Selatan.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 text-center space-y-3">
+                    <div class="w-14 h-14 bg-sky-100 text-sky-600 rounded-2xl flex items-center justify-center mx-auto text-2xl font-bold">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3 class="font-bold text-xl text-slate-800">Harga Jujur &amp; Transparan</h3>
+                    <p class="text-slate-600 text-sm">Pengecekan dan biaya diinformasikan di awal sebelum pengerjaan. Tanpa biaya tersembunyi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Cara Pemesanan -->
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center space-y-2 mb-12">
+                <span class="text-sky-400 font-bold text-xs uppercase tracking-widest">Mudah &amp; Praktis</span>
+                <h2 class="text-3xl font-extrabold text-white">4 Langkah Mudah Menggunakan Jasa Kami</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-800/60 rounded-2xl border border-slate-700/50 relative">
+                    <span class="text-4xl font-black text-sky-500/20 absolute top-4 right-4">01</span>
+                    <i class="fas fa-comments text-2xl text-sky-400 mb-4 block"></i>
+                    <h4 class="font-bold text-lg mb-1">Hubungi Kami</h4>
+                    <p class="text-xs text-slate-400">Sampaikan keluhan pompa air atau kebutuhan sumur bor Anda via WA / Telepon.</p>
+                </div>
+
                 <div class="p-6 bg-slate-800/60 rounded-2xl border border-slate-700/50 relative">
                     <span class="text-4xl font-black text-sky-500/20 absolute top-4 right-4">02</span>
                     <i class="fas fa-route text-2xl text-sky-400 mb-4 block"></i>
@@ -87,11 +297,11 @@
             <h2 class="text-2xl sm:text-3xl font-extrabold">Pompa Air Bermasalah? Jangan Tunda Lagi!</h2>
             <p class="text-sky-100 text-sm sm:text-base">Hubungi RHS Teknik sekarang juga. Teknisi kami siap meluncur ke lokasi Anda hari ini.</p>
             <div class="pt-2 flex flex-col sm:flex-row justify-center gap-3">
-                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20bantuan%20servis%20pompa%20air" target="_blank" class="inline-flex justify-center items-center gap-3 bg-white text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-100 transition text-lg">
+                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20bantuan%20servis%20pompa%20air" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-100 transition text-lg">
                     <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
-                    <span>Chat WhatsApp</span>
+                    <span>Hubungi WhatsApp</span>
                 </a>
-                <a href="tel:+6287765103868" class="inline-flex justify-center items-center gap-3 bg-slate-900 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-800 transition text-lg">
+                <a href="tel:087765103868" class="inline-flex items-center justify-center gap-3 bg-slate-900 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-800 transition text-lg border border-slate-700">
                     <i class="fas fa-phone-alt text-sky-400 text-xl"></i>
                     <span>Telepon Langsung</span>
                 </a>
@@ -108,15 +318,15 @@
 
     <!-- Fixed Floating Call / WA Button (HP Bottom Sticky) -->
     <div class="fixed bottom-3 left-3 right-3 sm:hidden z-50 flex gap-2">
-        <a href="tel:+6287765103868" class="flex-1 bg-slate-900 border border-slate-700 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl active:scale-95 transition">
+        <a href="tel:087765103868" class="flex-1 bg-slate-800 border border-slate-700 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl">
             <i class="fas fa-phone-alt text-sky-400"></i>
             <span>Telepon</span>
         </a>
-        <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" target="_blank" class="flex-1 bg-green-500 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl active:scale-95 transition">
+        <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" target="_blank" class="flex-1 bg-green-500 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl">
             <i class="fab fa-whatsapp text-xl"></i>
             <span>WhatsApp</span>
         </a>
     </div>
 
 </body>
-</html>
+        </html>
