@@ -9,6 +9,18 @@
     gtag('js', new Date());
 
     gtag('config', 'AW-18255577085');
+    gtag('config', 'G-JP5D7E8V0S');
+
+    // Fungsi Pelacak Konversi Klik Telepon & WA
+    function trackCallConversion(url) {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18255577085',
+        'event_callback': function() {
+          if (url) { window.location = url; }
+        }
+      });
+      return false;
+    }
   </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,11 +62,11 @@
 
             <!-- Tombol Kontak Header -->
             <div class="flex items-center gap-3">
-                <a href="tel:087765103868" class="hidden md:flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition">
+                <a href="tel:087765103868" onclick="trackCallConversion('tel:087765103868')" class="hidden md:flex items-center gap-2 text-sm font-semibold text-slate-300 hover:text-white transition">
                     <i class="fas fa-phone-alt text-sky-400"></i>
                     <span>0877-6510-3868</span>
                 </a>
-                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm flex items-center space-x-2 transition shadow-lg hover:shadow-green-500/20">
+                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" onclick="trackCallConversion()" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full font-semibold text-sm flex items-center space-x-2 transition shadow-lg hover:shadow-green-500/20">
                     <i class="fab fa-whatsapp text-lg"></i>
                     <span class="hidden sm:inline">Hubungi WA</span>
                 </a>
@@ -86,11 +98,11 @@
             </p>
 
             <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto sm:max-w-none">
-                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20mau%20konsultasi%20kendala%20pompa%20air" target="_blank" class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-center shadow-xl shadow-green-900/30 transition flex items-center justify-center space-x-3 text-lg">
+                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20mau%20konsultasi%20kendala%20pompa%20air" onclick="trackCallConversion()" target="_blank" class="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white font-bold px-8 py-4 rounded-xl text-center shadow-xl shadow-green-900/30 transition flex items-center justify-center space-x-3 text-lg">
                     <i class="fab fa-whatsapp text-2xl"></i>
                     <span>Konsultasi WA Gratis</span>
                 </a>
-                <a href="tel:087765103868" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl text-center border border-slate-700 shadow-lg transition flex items-center justify-center space-x-3 text-lg">
+                <a href="tel:087765103868" onclick="trackCallConversion('tel:087765103868')" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl text-center border border-slate-700 shadow-lg transition flex items-center justify-center space-x-3 text-lg">
                     <i class="fas fa-phone-alt text-sky-400"></i>
                     <span>Panggil Teknisi</span>
                 </a>
@@ -297,11 +309,11 @@
             <h2 class="text-2xl sm:text-3xl font-extrabold">Pompa Air Bermasalah? Jangan Tunda Lagi!</h2>
             <p class="text-sky-100 text-sm sm:text-base">Hubungi RHS Teknik sekarang juga. Teknisi kami siap meluncur ke lokasi Anda hari ini.</p>
             <div class="pt-2 flex flex-col sm:flex-row justify-center gap-3">
-                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20bantuan%20servis%20pompa%20air" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-100 transition text-lg">
+                <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20bantuan%20servis%20pompa%20air" onclick="trackCallConversion()" target="_blank" class="inline-flex items-center justify-center gap-3 bg-white text-slate-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-100 transition text-lg">
                     <i class="fab fa-whatsapp text-green-500 text-2xl"></i>
                     <span>Hubungi WhatsApp</span>
                 </a>
-                <a href="tel:087765103868" class="inline-flex items-center justify-center gap-3 bg-slate-900 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-800 transition text-lg border border-slate-700">
+                <a href="tel:087765103868" onclick="trackCallConversion('tel:087765103868')" class="inline-flex items-center justify-center gap-3 bg-slate-900 text-white font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-slate-800 transition text-lg border border-slate-700">
                     <i class="fas fa-phone-alt text-sky-400 text-xl"></i>
                     <span>Telepon Langsung</span>
                 </a>
@@ -318,15 +330,15 @@
 
     <!-- Fixed Floating Call / WA Button (HP Bottom Sticky) -->
     <div class="fixed bottom-3 left-3 right-3 sm:hidden z-50 flex gap-2">
-        <a href="tel:087765103868" class="flex-1 bg-slate-800 border border-slate-700 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl">
+        <a href="tel:087765103868" onclick="trackCallConversion('tel:087765103868')" class="flex-1 bg-slate-800 border border-slate-700 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl">
             <i class="fas fa-phone-alt text-sky-400"></i>
             <span>Telepon</span>
         </a>
-        <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" target="_blank" class="flex-1 bg-green-500 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl">
+        <a href="https://wa.me/6287765103868?text=Halo%20RHS%20Teknik,%20saya%20butuh%20jasa%20servis%20pompa%20air" onclick="trackCallConversion()" target="_blank" class="flex-1 bg-green-500 text-white font-bold py-3.5 rounded-xl flex justify-center items-center space-x-2 shadow-2xl">
             <i class="fab fa-whatsapp text-xl"></i>
             <span>WhatsApp</span>
         </a>
     </div>
 
 </body>
-        </html>
+  </html>
